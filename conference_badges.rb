@@ -1,32 +1,28 @@
 def badge_maker(name)
-  
-  "Hello, my name is #{name}."
-  
+"Hello, my name is #{name}."
 end
 
+def batch_badge_creator(attendees)
 
-
-
-def batch_badge_creator(names)
-  
-  names.collect {|name| badge_maker(name)}
+  attendees.map do |list| 
+    badge_maker(list)
+  end
 end
 
 def assign_rooms(speakers)
-  speakers.map.with_index do |speaker, index|
-    "Hello, #{speaker}! You'll be assigned to room #{index + 1}!"
+  
+  speakers.map.with_index do |name, index|
+    "Hello, #{name}! You'll be assigned to room #{index +1}!"
   end
-  
-  
 end
 
 def printer(attendees)
-  badges = batch_badge_creator(attendees)
-  room_assignments = assign_rooms(attendees)
-  badges.each do |badge|
-    puts badge
+  
+  batch_badge_creator(attendees).map do |list|
+    puts list
   end
-    room_assignments.each do |room|
-      puts room
-    end
+  
+  assign_rooms(attendees).map do |list|
+    puts list
+  end
 end
