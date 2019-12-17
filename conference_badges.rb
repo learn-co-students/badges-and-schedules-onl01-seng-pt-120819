@@ -1,1 +1,23 @@
-# Write your code here.
+def badge_maker (name)
+  "Hello, my name is #{name}."
+end
+
+def batch_badge_creator (attendees)
+  badges = []
+  attendees.each{|attendees| badges.push(badge_maker(attendees))}
+  return badges
+end
+
+def assign_rooms(names)
+  array = []
+  names.each_with_index {|name, i| array.push("Hello, #{name}! You'll be assigned to room #{i + 1}!")} 
+  array
+end
+
+def printer(name)
+ batch_badge_creator(attendees).each do |badge|
+puts badges
+end
+
+end
+
