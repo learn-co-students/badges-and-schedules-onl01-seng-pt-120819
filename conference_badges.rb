@@ -4,9 +4,9 @@ def badge_maker(name)
   "Hello, my name is #{name}."
 end
 
-return badge_maker("Arel")
+#return badge_maker("Arel")
 
-attendees = ["Edsger","Ada","Charles","Alan","Grace","Linus","Matz"]
+#attendees = ["Edsger","Ada","Charles","Alan","Grace","Linus","Matz"]
 
 def batch_badge_creator(attendees)
   attendees.each do |speaker|
@@ -15,4 +15,4 @@ def batch_badge_creator(attendees)
   end
 end
 
-return batch_badge_creator(attendees)
+#return batch_badge_creator(attendees)
