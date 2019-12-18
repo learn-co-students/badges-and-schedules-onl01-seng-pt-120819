@@ -9,10 +9,12 @@ end
 #attendees = ["Edsger","Ada","Charles","Alan","Grace","Linus","Matz"]
 
 def batch_badge_creator(attendees)
+
   attendees.each do |speaker|
-    badge = badge_maker(speaker)
+    puts badge_maker(speaker)
     #puts badge
   end
+
 end
 
 #return batch_badge_creator(attendees)
